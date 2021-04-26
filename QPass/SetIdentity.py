@@ -16,7 +16,7 @@ class Ui_SetIdentity(object):
         SetIdentity.setObjectName("SetIdentity")
         SetIdentity.resize(486, 245)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("c:\\Users\\SpecterShell\\Documents\\Workspace\\QPass\\icon/person-black-48dp.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("d:\\Repositories\\PasswordManager\\QPass\\QPass\\icon/person-black-48dp.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         SetIdentity.setWindowIcon(icon)
         self.gridLayout = QtWidgets.QGridLayout(SetIdentity)
         self.gridLayout.setObjectName("gridLayout")

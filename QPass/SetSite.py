@@ -16,7 +16,7 @@ class Ui_SetSite(object):
         SetSite.setObjectName("SetSite")
         SetSite.resize(486, 245)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("c:\\Users\\SpecterShell\\Documents\\Workspace\\QPass\\icon/language-black-48dp.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("d:\\Repositories\\PasswordManager\\QPass\\QPass\\icon/language-black-48dp.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         SetSite.setWindowIcon(icon)
         self.gridLayout = QtWidgets.QGridLayout(SetSite)
         self.gridLayout.setObjectName("gridLayout")

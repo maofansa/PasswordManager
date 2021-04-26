@@ -16,7 +16,7 @@ class Ui_SetDatabase(object):
         SetDatabase.setObjectName("SetDatabase")
         SetDatabase.resize(486, 312)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("c:\\Users\\SpecterShell\\Documents\\Workspace\\QPass\\icon/dns-black-48dp.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("d:\\Repositories\\PasswordManager\\QPass\\QPass\\icon/dns-black-48dp.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         SetDatabase.setWindowIcon(icon)
         self.gridLayout = QtWidgets.QGridLayout(SetDatabase)
         self.gridLayout.setObjectName("gridLayout")

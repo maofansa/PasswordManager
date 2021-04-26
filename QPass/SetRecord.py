@@ -16,7 +16,7 @@ class Ui_SetRecord(object):
         SetRecord.setObjectName("SetRecord")
         SetRecord.resize(486, 246)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("c:\\Users\\SpecterShell\\Documents\\Workspace\\QPass\\icon/receipt_long-black-48dp.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("d:\\Repositories\\PasswordManager\\QPass\\QPass\\icon/receipt_long-black-48dp.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         SetRecord.setWindowIcon(icon)
         self.gridLayout = QtWidgets.QGridLayout(SetRecord)
         self.gridLayout.setObjectName("gridLayout")
