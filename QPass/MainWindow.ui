@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>717</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>密码管理器</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon/fingerprint-black-48dp.svg</normaloff>icon/fingerprint-black-48dp.svg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabRecord">
+       <attribute name="title">
+        <string>记录</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="2">
+         <widget class="QPushButton" name="pushButtonDeleteRecord">
+          <property name="text">
+           <string>删除记录</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushButtonNewRecord">
+          <property name="text">
+           <string>添加记录</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButtonEditRecord">
+          <property name="text">
+           <string>编辑记录</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0" colspan="4">
+         <widget class="QTreeWidget" name="treeRecord">
+          <column>
+           <property name="text">
+            <string>身份</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>站点</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>密码</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>备注</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>UUID</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabIdentity">
+       <attribute name="title">
+        <string>身份</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="2">
+         <widget class="QPushButton" name="pushButtonDeleteIdentity">
+          <property name="text">
+           <string>删除身份</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushButtonNewIdentity">
+          <property name="text">
+           <string>添加身份</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButtonEditIdentity">
+          <property name="text">
+           <string>编辑身份</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0" colspan="4">
+         <widget class="QTreeWidget" name="treeIdentity">
+          <column>
+           <property name="text">
+            <string>账号</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>备注</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabSite">
+       <attribute name="title">
+        <string>站点</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="1" column="0" colspan="4">
+         <widget class="QTreeWidget" name="treeSite">
+          <column>
+           <property name="text">
+            <string>地址</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>名称</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>备注</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushButtonNewSite">
+          <property name="text">
+           <string>添加站点</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="pushButtonDeleteSite">
+          <property name="text">
+           <string>删除站点</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButtonEditSite">
+          <property name="text">
+           <string>编辑站点</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>960</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDatabase">
+    <property name="title">
+     <string>数据库</string>
+    </property>
+    <addaction name="actionConnectDatabase"/>
+    <addaction name="actionCloseDatabase"/>
+    <addaction name="actionUpdateDatabase"/>
+   </widget>
+   <widget class="QMenu" name="menuRecord">
+    <property name="title">
+     <string>记录</string>
+    </property>
+    <addaction name="actionNewRecord"/>
+    <addaction name="actionEditRecord"/>
+    <addaction name="actionDeleteRecord"/>
+    <addaction name="separator"/>
+    <addaction name="actionCopyUsername"/>
+    <addaction name="actionCopyPassword"/>
+   </widget>
+   <widget class="QMenu" name="menuSite">
+    <property name="title">
+     <string>站点</string>
+    </property>
+    <addaction name="actionNewSite"/>
+    <addaction name="actionEditSite"/>
+    <addaction name="actionDeleteSite"/>
+   </widget>
+   <widget class="QMenu" name="menuIdentity">
+    <property name="title">
+     <string>身份</string>
+    </property>
+    <addaction name="actionNewIdentity"/>
+    <addaction name="actionEditIdentity"/>
+    <addaction name="actionDeleteIdentity"/>
+   </widget>
+   <addaction name="menuDatabase"/>
+   <addaction name="menuRecord"/>
+   <addaction name="menuIdentity"/>
+   <addaction name="menuSite"/>
+  </widget>
+  <action name="actionNewRecord">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/receipt_long-black-48dp.svg</normaloff>icon/receipt_long-black-48dp.svg</iconset>
+   </property>
+   <property name="text">
+    <string>添加记录</string>
+   </property>
+   <property name="toolTip">
+    <string>添加记录</string>
+   </property>
+  </action>
+  <action name="actionEditRecord">
+   <property name="text">
+    <string>编辑记录</string>
+   </property>
+   <property name="toolTip">
+    <string>编辑记录</string>
+   </property>
+  </action>
+  <action name="actionDeleteRecord">
+   <property name="text">
+    <string>删除记录</string>
+   </property>
+   <property name="toolTip">
+    <string>删除记录</string>
+   </property>
+  </action>
+  <action name="actionNewDatabase">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/dns-black-48dp.svg</normaloff>icon/dns-black-48dp.svg</iconset>
+   </property>
+   <property name="text">
+    <string>新建数据库</string>
+   </property>
+   <property name="toolTip">
+    <string>新建数据库</string>
+   </property>
+  </action>
+  <action name="actionConnectDatabase">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/link-black-48dp.svg</normaloff>icon/link-black-48dp.svg</iconset>
+   </property>
+   <property name="text">
+    <string>连接数据库</string>
+   </property>
+   <property name="toolTip">
+    <string>连接数据库</string>
+   </property>
+  </action>
+  <action name="actionUpdateDatabase">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/refresh-black-48dp.svg</normaloff>icon/refresh-black-48dp.svg</iconset>
+   </property>
+   <property name="text">
+    <string>刷新数据库</string>
+   </property>
+   <property name="toolTip">
+    <string>刷新数据库</string>
+   </property>
+  </action>
+  <action name="actionCloseDatabase">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/link_off-black-48dp.svg</normaloff>icon/link_off-black-48dp.svg</iconset>
+   </property>
+   <property name="text">
+    <string>关闭数据库</string>
+   </property>
+   <property name="toolTip">
+    <string>关闭数据库</string>
+   </property>
+  </action>
+  <action name="actionCopyUsername">
+   <property name="text">
+    <string>复制用户名</string>
+   </property>
+   <property name="toolTip">
+    <string>复制用户名</string>
+   </property>
+  </action>
+  <action name="actionCopyPassword">
+   <property name="text">
+    <string>复制密码</string>
+   </property>
+   <property name="toolTip">
+    <string>复制密码</string>
+   </property>
+  </action>
+  <action name="actionNewIdentity">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/person_add_alt_1-black-48dp.svg</normaloff>icon/person_add_alt_1-black-48dp.svg</iconset>
+   </property>
+   <property name="text">
+    <string>添加身份</string>
+   </property>
+   <property name="toolTip">
+    <string>添加身份</string>
+   </property>
+  </action>
+  <action name="actionEditIdentity">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/person-black-48dp.svg</normaloff>icon/person-black-48dp.svg</iconset>
+   </property>
+   <property name="text">
+    <string>编辑身份</string>
+   </property>
+   <property name="toolTip">
+    <string>编辑身份</string>
+   </property>
+  </action>
+  <action name="actionDeleteIdentity">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/person_remove_alt_1-black-48dp.svg</normaloff>icon/person_remove_alt_1-black-48dp.svg</iconset>
+   </property>
+   <property name="text">
+    <string>删除身份</string>
+   </property>
+   <property name="toolTip">
+    <string>删除身份</string>
+   </property>
+  </action>
+  <action name="actionNewSite">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/language-black-48dp.svg</normaloff>icon/language-black-48dp.svg</iconset>
+   </property>
+   <property name="text">
+    <string>添加站点</string>
+   </property>
+   <property name="toolTip">
+    <string>添加站点</string>
+   </property>
+  </action>
+  <action name="actionEditSite">
+   <property name="text">
+    <string>编辑站点</string>
+   </property>
+   <property name="toolTip">
+    <string>编辑站点</string>
+   </property>
+  </action>
+  <action name="actionDeleteSite">
+   <property name="text">
+    <string>删除站点</string>
+   </property>
+   <property name="toolTip">
+    <string>删除站点</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonNewRecord</sender>
+   <signal>clicked()</signal>
+   <receiver>actionNewRecord</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>358</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonEditRecord</sender>
+   <signal>clicked()</signal>
+   <receiver>actionEditRecord</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonDeleteRecord</sender>
+   <signal>clicked()</signal>
+   <receiver>actionDeleteRecord</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>270</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonNewIdentity</sender>
+   <signal>clicked()</signal>
+   <receiver>actionNewIdentity</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonDeleteIdentity</sender>
+   <signal>clicked()</signal>
+   <receiver>actionDeleteIdentity</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>270</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonEditIdentity</sender>
+   <signal>clicked()</signal>
+   <receiver>actionEditIdentity</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonDeleteSite</sender>
+   <signal>clicked()</signal>
+   <receiver>actionDeleteSite</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>270</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonNewSite</sender>
+   <signal>clicked()</signal>
+   <receiver>actionNewSite</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonEditSite</sender>
+   <signal>clicked()</signal>
+   <receiver>actionEditSite</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <buttongroups>
+  <buttongroup name="buttonGroupMode"/>
+ </buttongroups>
+</ui>
